@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" ng-app="vmfModule">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Xactly Components Library</title>
+
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="location" content="" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" />
+     <script type="text/javascript" src="../../dev/assets/libs/modernizer.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+</head>
+
+<body class="ng-cloak">
+    <!-- Outer Wrapper - Start -->
+    <div id="wrapper" class="clearfix" ng-controller="mainCtrl">
+        <div class="vmf-header">
+            <a class="logo" href="#">
+                <span>X - Component Library</span>
+            </a>
+        </div>
+        <!--<div class="global-navigation"></div> -->
+       
+        <div class="main-container ">   
+            <div class="container-fluid">         
+            <div class="row">
+               <h1 class="pre-title">Component - <span>{{activelink}}</span></h1>
+                <div class="leftNav col-md-2 col-xs-12">
+
+                    <h2>Form Elements</h2>
+
+                    <ul class="component-list">
+                        <li><a ui-sref="Radio" ng-class='{activeStateLink:activelink=="Radio Buttons"}' class='activeHover'>Radio Buttons</a>
+                        </li>
+                        <li><a ui-sref="ComboBox" ng-class='{activeStateLink:activelink=="Combo Box"}' class='activeHover'>Combo Box</a>
+                        </li>
+                        <li><a ui-sref="Checkbox" ng-class='{activeStateLink:activelink=="Checkbox"}' class='activeHover'>Checkbox</a>
+                        </li>
+                        <li><a ui-sref="TextInputBox" ng-class='{activeStateLink:activelink=="Text Input Box"}' class='activeHover'> Text Input Box</a>
+                        </li>
+                        <li><a ui-sref="Dropdown" ng-class='{activeStateLink:activelink=="Drop Down List"}' class='activeHover'> Drop Down List </a>
+                        </li>
+
+                    </ul>                   
+                    <h2>Controls</h2>
+
+                    <ul class="component-list">
+                        <li><a ui-sref="Calendar" ng-class='{activeStateLink:activelink=="Calendar Date Picker"}' class='activeHover'>Calendar Date Picker</a>
+                        </li>
+                          
+                    </ul>
+
+                </div>
+
+                <div class="rightNav col-md-10 col-xs-12">
+                    <div ui-view></div>
+
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="/js/vmfLibComponents.js"></script>
+    <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+
+</body>
+</html>
