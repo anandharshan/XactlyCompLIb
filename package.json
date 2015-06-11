@@ -1,13 +1,13 @@
 {
-  "name": "vmware_components_library",
+  "name": "Xactly_components_library",
   "version": "0.1.0",
-  "author": "Cognizant Interactive",
+  "author": "Anand Harshan",
   "contributors": [
     {
-      "name": "Cognizant Interactive"
+      "name": "Anand Harshan"
     }
   ],
-  "description": "Build Automation for VMware components library by Cognizant Interactive @ Cognizant Technology Solutions",
+  "description": "Build Automation for Xactly components library by Anand Harshan",
   "repository": {
     "type": "",
     "url": ""
